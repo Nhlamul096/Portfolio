@@ -45,7 +45,7 @@ nav {
 }
 
 section {
-    padding: 60px 20px;
+    padding: 10px 10px;
 }
 
 h2 {
@@ -338,3 +338,4 @@ footer {
 .social-media a i {
     font-size: 24px; /* Change icon size */
 }
+
