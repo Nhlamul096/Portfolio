@@ -368,22 +368,49 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
+    width: 177.78vh; /* 16:9 aspect ratio */
     height: 100vh;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    object-fit: cover;
 }
 
 .home-content {
     position: relative;
     z-index: 1;
+    padding: 20px;
 }
 
 .btn {
     margin-top: 20px;
-    background-color: #3d33ff;
+    background-color: #ff5733;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 100vw;
+        height: 56.25vw; /* 16:9 aspect ratio for mobile */
+    }
+
+    .home-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }
