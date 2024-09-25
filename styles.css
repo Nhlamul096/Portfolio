@@ -359,7 +359,7 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 130%;
+    height: 100%;
     overflow: hidden;
     z-index: -1;
 }
@@ -381,7 +381,7 @@ footer {
 
 .btn {
     margin-top: 20px;
-    background-color: #3d33ff;
+    background-color: #ff5733;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
