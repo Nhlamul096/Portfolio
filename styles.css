@@ -329,3 +329,12 @@ footer {
 
 
 
+.social-media a {
+    margin: 0 10px; /* Add space between icons */
+    color: #000; /* Icon color */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-media a i {
+    font-size: 24px; /* Change icon size */
+}
