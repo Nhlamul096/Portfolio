@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhlamulo's Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nhlamulo's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+        <!--<div class="hero-content">-->
+            <h1>Welcome to The Future</h1>
+            <p>Explore my projects, skills, and certificates below!</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="Images\aboutMe.jpg" alt="Your Picture">
+            <div class="about-text">
+                <p>Hi, I’m [Your Name], a passionate data scientist with a strong background in computational and applied mathematics. I have experience in machine learning, data visualization, and creating impactful data-driven solutions.</p>
+                <p>I love working with large datasets and extracting meaningful insights to drive business decisions. Feel free to explore my portfolio and get in touch!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">Python</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Power BI</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-cards">
+            <div class="card">
+                <img src="Images\images.jpg" alt="Project 1 Preview">
+                <h3>Sales Forecasting Model</h3>
+                <p>Developed a machine learning model to forecast sales based on historical data.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="Images\images.jpg" alt="Project 2 Preview">
+                <h3>Customer Segmentation Analysis</h3>
+                <p>Performed customer segmentation using K-Means clustering on a large retail dataset.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="card">
+                <img src="Images\images.jpg" alt="Project 3 Preview">
+                <h3>Data Visualization Dashboard</h3>
+                <p>Built an interactive Power BI dashboard to visualize key business metrics.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-cards">
+            <div class="card">
+                <h3>Data Science with Python (Udemy)</h3>
+                <p>Completed an in-depth course on data science fundamentals and Python programming.</p>
+                <a href="certificate-link-1.pdf" target="_blank" class="btn">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>Power BI Professional (LinkedIn Learning)</h3>
+                <p>Mastered Power BI to create advanced visualizations and reports for data analysis.</p>
+                <a href="certificate-link-2.pdf" target="_blank" class="btn">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3>Machine Learning Specialization (Coursera)</h3>
+                <p>Specialized in machine learning algorithms and techniques using Python and TensorFlow.</p>
+                <a href="certificate-link-3.pdf" target="_blank" class="btn">View Certificate</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nhlamulo's Data Science Portfolio</p>
+        <div class="social-media">
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
