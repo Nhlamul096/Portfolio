@@ -366,3 +366,25 @@ footer {
 .home-content {
     z-index: 1;
 }
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Adjust size to your liking */
+    font-weight: 600;
+    color: #ff6700; /* Bright color to stand out */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Add some space between letters */
+    padding: 10px 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Add hover effect */
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+    color: #840564b9; /* Darken the color slightly on hover */
+}
