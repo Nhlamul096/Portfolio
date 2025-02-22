@@ -1,0 +1,8 @@
+/* Make the iframe fill the page horizontally */
+.responsive-iframe {
+    width: 100%;           /* Make the iframe width 100% of its container */
+    height: 100vh;         /* Fill the entire viewport height */
+    border: 2px solid #000; /* Add a black border to create a boxed effect */
+    box-sizing: border-box; /* Include the border in the iframe's total width and height */
+    display: block;        /* Remove any default inline styling */
+}

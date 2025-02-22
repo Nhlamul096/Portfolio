@@ -1,0 +1,145 @@
+/* General Styling 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  */
+ /* header {
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+  }
+  */
+ /* nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  */
+ /* nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }*/
+  
+ /* nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  */
+  nav ul li a:hover {
+    background-color: #575757;
+  }
+  
+ /* .menu-toggle {
+    display: none;
+  }*/
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* Project Header */
+  .project-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .project-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .project-header p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Project Description Section */
+  .project-description {
+    margin-bottom: 40px;
+  }
+  
+  .project-description p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* How to Use Section */
+  .how-to-use {
+    margin-bottom: 40px;
+  }
+  
+  .how-to-use ul {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+  
+  .how-to-use li {
+    font-size: 16px;
+    color: #444;
+  }
+  
+  
+  
+  /* Project Gallery */
+  .project-gallery .gallery {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .project-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Features Section */
+  .project-features ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-features li {
+    font-size: 16px;
+    color: #333;
+    padding: 8px 0;
+  }
+  
+  /* Demo Link */
+  .project-demo a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .project-demo a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+ footer .social-media a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  footer .social-media a:hover {
+    color: #fcfcfc;
+  }
+  
