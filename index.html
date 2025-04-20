@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -30,25 +30,34 @@
   
     <section id="home">
         <div class="image-container">
-            <img src="Images\background_home.jpg" alt="Background Image">
+         
         </div>
         <div class="home-content">
             <h1>Welcome to The Future</h1>
             <p>Explore my projects, skills, and certificates below!</p>
             <a href="#projects" class="btn">View My Work</a>
         </div>
+       
+       
+        
+        
     </section>
 
     
 
     <section id="about">
+        
         <h2>About Me</h2>
+        <div class="identity-line">
+            In a nutshell, I am a <span id="role" class="highlight fade-in">Developer</span>.
+        </div>
+       
         <div class="about-content">
-            <img src="Images\aboutMe.jpg" alt="Nhlamulo's picture">
+            <img src="Images\aboutMe.jpg" alt="Background Image">
             <div class="about-text">
-                <p>Hi, I’m Nhlamulo Mashele, a data scientist with a keen interest in predictive modeling. I hold a Bachelor of Science in Computational and Applied Mathematics & Economic Science from 
+                <p>Hi, I’m Nhlamulo Mashele, an aspiring data scientist with a keen interest in predictive modeling. I hold a Bachelor of Science in Computational and Applied Mathematics & Economic Science from 
                     the University of the Witwatersrand, complemented by my experience in software engineering. My passion lies in leveraging data to forecast trends and inform strategic decisions.
-                     I named my website  <strong>The Future</strong> because working with data science feels like time traveling to me; 
+                     I named my website  <strong><span class="zoom-text">The_Future</span></strong> because working with data science feels like time traveling to me; 
                      it enables us to glimpse into what lies ahead and make informed choices today.</p>
                 <p>I thrive in working with large datasets to uncover valuable insights that can shape the future of businesses. Feel free to explore my portfolio and connect with me to discuss how we can
                     collaborate to shape  a brighter future through data driven strategies.
@@ -60,34 +69,53 @@
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-container">
-            <div class="skill">Java</div>
+            
             <div class="skill">Python</div>
             <div class="skill">Data Visualization</div>
             <div class="skill">SQL</div>
             <div class="skill">Power BI</div>
             <div class="skill">Machine Learning</div>
             <div class="skill">Data Analysis</div>
-            <div class="skill">Version Control</div>
+            <div class="skill">Statistics</div>
+            <div class="skill">Mathematics</div>
+            <div class="skill">Numerical Analysis</div>
+            <div class="skill">Optimization</div>
+            <div class="skill">Mathematical Modelling</div>
+            <div class="skill">Microsoft 365</div>
             </div>    
     </section>
 </section>
 
 <section id="skills">
     <div class="skills-container">
-        <div class="skill">Microsoft 365</div>
-        <div class="skill">HTML 5 & CSS3</div>
-        <div class="skill">Java Script</div>
+        <div class="skill">Java</div>
         <div class="skill">Springboot</div>
+        <div class="skill">JDBC</div>
+        <div class="skill">Postgre SQL</div>
         <div class="skill">Microservives</div>
-        <div class="skill">Optimization</div>
-        <div class="skill">Mathematics</div>
-        <div class="skill">Statistics</div>
+        <div class="skill">HTML 5 & CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Flutter</div>
+        <div class="skill">Dart</div>
+        <div class="skill">Data structures and algorithms</div>
+        <div class="skill">OOP</div>
+        <div class="skill">Version Control</div>
         </div>    
 </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="project-cards">
+
+
+            <div class="card">
+                <img src="Images\inventory.jpg" alt="Project 1 Preview">
+                <h3>Inventory Management System</h3>
+                <p>Streamline your inventory with ease! Built with Python and Flask, our Inventory Management App helps you track, 
+                    organize, and optimize your stock in real-time. Simplify operations, reduce errors, 
+                    and boost efficiency—all in one intuitive platform..</p>
+                <a href="https://octoberfuture.pythonanywhere.com/" class="btn">View Project</a>
+            </div>
 
             <div class="card">
                 <img src="Images\Library.png" alt="Project 1 Preview">
@@ -96,12 +124,12 @@
                 <a href="https://github.com/Nhlamul096/Library-Management-System/" class="btn">View Project</a>
             </div>  
 
-            <div class="card">
+           <!-- <div class="card">
                 <img src="Images\financial.jpg" alt="Project 2 Preview">
                 <h3>Financial Market Price Prediction Model</h3>
                 <p>A model that predicts prices, executes trades, and manages risk automatically to optimize trading outcomes.</p>
                 <a href="https://github.com/Nhlamul096/Algorithmic-Trading/tree/master" class="btn">View Project</a>
-            </div>  
+            </div>  -->
 
             <div class="card">
                 <img src="Images\stock price.png" alt="Project 3 Preview">
@@ -124,26 +152,11 @@
                 <img src="Images\this.jpg" alt="Project 3 Preview">
                 <h3>Data Visualization Dashboard</h3>
                 <p>Built an interactive Power BI dashboard to visualize key business metrics.</p>
-                <a href="https://drive.google.com/file/d/11brBHg2mlztgeQuqvRmrg1dzW2NeXW22/view?usp=drive_link" class="btn">View Project</a>
+                <a href="dashboard.html" class="btn">View Project</a>
             </div>
 
-            <div class="card">
-                <img src="Images\inventory.jpg" alt="Project 1 Preview">
-                <h3>Inventory Management System</h3>
-                <p>Streamline your inventory with ease! Built with Python and Flask, our Inventory Management App helps you track, 
-                    organize, and optimize your stock in real-time. Simplify operations, reduce errors, 
-                    and boost efficiency—all in one intuitive platform..</p>
-                <a href="https://octoberfuture.pythonanywhere.com/" class="btn">View Project</a>
-            </div>
+        
 
-            <div class="card">
-                <img src="Images\ToDo.jpg" alt="Project 1 Preview">
-                <h3>TODO APP</h3>
-                <p>Streamline your inventory with ease! Built with Python and Flask, our Inventory Management App helps you track, 
-                    organize, and optimize your stock in real-time. Simplify operations, reduce errors, 
-                    and boost efficiency—all in one intuitive platform..</p>
-                <a href="https://octoberfuture.pythonanywhere.com/" class="btn">View Project</a>
-            </div>
 
             <div class="card">
                 <img src="Images\EA.jpg" alt="Project 1 Preview">
@@ -216,9 +229,9 @@
             </div>
 
             <div class="card">
-                <h3>Google Data Analytics(Google)</h3>
-                <p>The Google Data Analytics Certificate is a beginner-friendly, online program designed to teach you the essential skills for analyzing and interpreting data. 
-                    With hands-on training in tools like SQL, Excel, and Tableau and R programming.</p>
+                <h3>AZ-900(Microsoft)</h3>
+                <p>Demonstrates a foundational understanding of cloud computing concepts, core Microsoft Azure services, solutions, and management tools. Covers key areas such as security, privacy, compliance, governance, and Azure pricing models, equipping individuals with the knowledge needed to make informed decisions about cloud 
+                    services and how they fit into modern business environments.</p>
                 <a href="#placeholder" target="_blank" class="btn">In Progress</a>
             </div>
         </div>
@@ -230,7 +243,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Nhlamulo Mashele. All Rights Reserved.</p>
+        <p>&copy; 2025 Nhlamulo Mashele. All Rights Reserved.</p>
         <div class="social-media">
             <a href="https://www.youtube.com/@The_Future_Data_Science" target="_blank"><i class="fab fa-youtube"></i></a>
             <a href="https://www.instagram.com/royalest_t/" target="_blank"><i class="fab fa-instagram"></i></a>

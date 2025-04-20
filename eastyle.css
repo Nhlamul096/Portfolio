@@ -1,38 +1,4 @@
-/* General Styling 
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  */
- /* header {
-    background-color: #333;
-    padding: 20px 0;
-    color: #fff;
-  }
-  */
- /* nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 20px;
-  }
-  */
- /* nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-  }*/
-  
- /* nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-  }
-  */
-  nav ul li a:hover {
+nav ul li a:hover {
     background-color: #575757;
   }
   
