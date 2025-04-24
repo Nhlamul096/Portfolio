@@ -36,13 +36,44 @@
   <main>
     <section class="project-header">
       
+      <div class="card">
+        <h3>Executive Summary</h3>
+        <p>This presentation analyzes historical sales data from 2018 to 2021 to identify key trends, sales drivers, and growth opportunities for CompanyX in the South African liquor market.
+           Key recommendations include focusing on high-performing pack types and categories, optimizing marketing strategies, and exploring niche markets for sustained growth.
+        </p>
+        
+        <h4>Key findings:</h4>
+        <ul>
+          <li>CompanyX has been the leading manufacturer for the 4 year period.</li>
+          <li>Beer of pack size 750 ml accounts for the majority of the sales.</li>
+          <li>Brand A is the overall leading brand.</li>
+          <li>We predict a 2,25% increase in sales for manufacturer CompanyX.</li>
+        </ul>
+
+        <h4>Key Recommendations:</h4>
+        <ul>
+          <li>Increase production and marketing efforts for high-performing pack types.</li>
+          <li>Enhance packaging and marketing for convenience packs.</li>
+          <li>Develop targeted campaigns for niche segments.</li>
+        </ul>
+         
+ 
+    </div>
     
     
     
     <div class="card">
         <h3>Introduction</h3>
-        <p>In this presentation we will focus on alcoholic beverage sales data from the years 2018- 2021 for multiple manufacturers. With this data set we will be conducting an analysis from which we will draw useful insight on trends and performance of the market, and provide a forecast on future sales. Our aim is to use these insights and predictions to ultimately provide useful recommendations for SAB as a manufacturer.</p>
-           <iframe class="responsive-iframe" width="100%" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiNzQ3MDBkNDYtNmJhZC00MDI4LThiZDQtMGNhZTljYzA3MDBhIiwidCI6IjRiMWI5MDhjLTU1ODItNDM3Ny1iYTA3LWEzNmQ2NWUzNDkzNCIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+        <p>In this presentation we will focus on alcoholic beverage sales data from the years 2018- 2021 for multiple manufacturers. With this data set we will be conducting an analysis from which we will draw useful insight on trends and performance of the market, and provide a forecast on future sales. Our aim is to use these insights and predictions to ultimately provide useful recommendations for CompanyX as a manufacturer.</p>
+        <h4>Approach:</h4>
+        <ol>
+          <li>Data analysis of sales from 2018 to 2021.</li>
+          <li>Visualization of trends using stacked bar charts, pie charts ,stacked bar charts, pivot tables in excel and powerBi.</li>
+          <li>Identification of key sales drivers and growth opportunities.</li>
+          <li>Forecasting using ARIMA model in python.</li>
+           
+        </ol>
+        <iframe title="Sales" width="1100" height="500" src="https://app.powerbi.com/view?r=eyJrIjoiZDk5NjRkZTctNmVhZC00ODAzLWIxMTktMWJhYTgwNzBlMmY0IiwidCI6IjRiMWI5MDhjLTU1ODItNDM3Ny1iYTA3LWEzNmQ2NWUzNDkzNCIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
  
     </div>
     
@@ -50,42 +81,105 @@
       <h2>Sales Trends analysis</h2>
 
       <div class="card">
-        <p>SAB has been the leading manufacturer throughout all the years in this data set.
+        <p>CompanyX has been the leading manufacturer throughout all the years in this data set.
           The second most performing manufacturer is Competitor C
           Competitor A and B alternate over the 4 years, with Competitor B taking the slight lead. 
           Others is the least performing manufacturer 
-          Despite having lower overall sales than SAB, competitor C had the largest increase in sum of sales volume over the years, while SAB had the largest decrease. 
+          Despite having lower overall sales than SAB, competitor C had the largest increase in sum of sales volume over the years, while CompanyX had the largest decrease. 
           </p>
 
-          <p>From this graph we immediately see that SAB has an exponential lead in sales, with the pack size of 750ml contributing the most to that lead. 
-            The pack sizes with the highest demand ranges from 340 -750ml with SAB being the most preferred manufacturer. 
+          <p>From this graph we immediately see that CompanyX has an exponential lead in sales, with the pack size of 750ml contributing the most to that lead. 
+            The pack sizes with the highest demand ranges from 340 -750ml with CompanyX being the most preferred manufacturer. 
             </p>
 
-            <p>In the beer category SAB is the best performing manufacturer, having an extensive lead compared to all other competitors. 
-              In the beyond beer category Competitor C is the leading manufacturer, followed by competitor A, closely followed by Competitor B, with SAB being the penultimate manufacturer and others being the least performing.
+            <p>In the beer category CompanyX is the best performing manufacturer, having an extensive lead compared to all other competitors. 
+              In the beyond beer category Competitor C is the leading manufacturer, followed by competitor A, closely followed by Competitor B, with CompanyX being the penultimate manufacturer and others being the least performing.
               </p>
+            </div>
+      </section>
 
-       
+      <div class="card">
+        <h3>Forecasting</h3>
+
+        <h4>To develop a forecasting model for predicting future volume growth for each manufacturer,
+           the following approach was undertaken:
+        </h4>
+
+        <ol>
+          <li>I imported the dataset into Python and aggregated it by manufacturer and year.</li>
+          <li>I checked for stationarity using the Augmented Dickey-Fuller (ADF) test and applied differencing to non-stationary data to ensure stationarity.</li>
+          <li>I then employed ARIMA and SARIMA models for forecasting due to their ability to handle trends and seasonality in time series data.  </li>
+          <li>I trained the models using historical data from 2018 to 2020.</li>
+          <li>I tested the models using data from 2021 to evaluate their accuracy.</li>
+          <li>I assessed the performance of the models using the Root Mean Squared Error (RMSE) metric.</li>
+          <li>I generated sales forecasts for 2022 using the trained models.</li>
+        </ol>
+
+        <p>The SARIMAX model summaries for each manufacturer are included in the appendix for detailed review and reference.
+        </p>
+
+        <h4>Forecasted sales for CompanyX for each month of 2022:</h4>
+<p>2022-01-01    37364.052202<br>
+2022-02-01    33588.941488<br>
+2022-03-01    37100.337034<br>
+2022-04-01    39179.670748<br>
+2022-05-01    40743.257784<br>
+2022-06-01    34557.056217<br>
+2022-08-01    37081.002133<br>
+2022-09-01    36912.051619<br>
+2022-10-01    35129.076961<br>
+2022-11-01    43788.075502<br>
+2022-12-01    35690.378843<br>
+Freq: MS, Name: predicted_mean, dtype: float64</p>
+
+
+
+<h4>Confidence intervals for the forecasted sales for SAB for each month of 2022:</h4>
+               lower CompanyX    upper CompanyX
+<p>2022-01-01    13793.546860     60934.557543<br>
+2022-02-01        7086.741086      60091.141889<br>
+2022-03-01        8713.218958       65487.455110<br>
+2022-04-01          9135.353632      69223.987865<br>
+2022-05-01          9145.967064       72340.548504<br>
+2022-06-01          1482.405767        67631.706667<br>
+2022-07-01         -1961.549053         67015.217374<br>
+2022-08-01          1234.601208        72927.403057<br>
+2022-09-01           -242.855937       74066.959175<br>
+2022-10-01        -3289.999733        73548.153656<br>
+2022-11-01          4144.486834       83431.664171<br>
+2022-12-01          -5143.712489      76524.470176</p>
+<h4>RMSE for SAB:  10450.162509593605</h4>
+
+
+        <img src="Images\Forecast companyX.jpg" alt="Background Image">
+
+        <strong>Historical Sales Volume for CompanyX in 2021: 427970.33 hL</strong><br>
+        <strong>Sales Volume for CompanyX in 2022: 437641.00 hL</strong> <br>
+        <strong>Expected Growth Rate for CompanyX in 2022: 2,25%</strong>
           
-        
-           
-    </div>
-      
-    </section>
-
-     
+      </div>
 
         <div class="card">
             <h3>Recommendations</h3>
             <ul>
-              <li> more effective marketing of products, we advise that SAB invest in the latest digital and social marketing trends, which include short-form content marketing, influencer collaborations and targeted advertising.</li> 
-              <li>SAB should offer more customer engagement as a potential marketing strategy, examples include loyalty programs and personalized marketing strategies </li>
-              <li>For effective product development we recommend that SAB should further diversify and innovate their product by means of developing new flavours, new premium or craft lines, more promotion of pre-mixed beverages and the making limited editions or collaborations</li>
-             <li>In terms of distribution, we recommend that SAB should develop more partnerships with online retailers, optimize their supply chain through efficient logistical processes, expand further into the intracontinental market ( Africa), and strengthen their existing alliances and partnerships with distributors to ensure optimal shelf placement.</li>  
-
-             <li> From our analysis we found that the highest performing product from SAB is beer, specifically pack size 750ml which comes in the bottle pack type, and this product made more sales than all other products combined. For SAB to capitalize on this market lead we recommend new aesthetic renovations to the packaging and labelling of the product as a way to visually persuade the customer into purchasing this product over the competitors offering. </li>
-             <li>The data showed that SAB is underperforming in the box segment, and had no market share in the tetra and sachet segment.However, these segments only make a 1% of the total market share from our analysis, we recommend that SAB promote the products under the box pack type using the marketing strategies mentioned in the previous slide (content marketing, influencer collaborations,etc.). </li>
-              <li>For SAB to penetrate the tetra and sachet segments, we suggest that they conduct thorough market research to evaluate the demographic and appeal which drive sales in this segment, and then introduce new products under this segment in a customer engaging manner. </li> 
+              <li>For more effective marketing of products, we advise that SAB invest in the latest digital and social marketing trends, which include short-form content marketing, influencer collaborations and targeted advertising. </li>
+              <li>SAB should offer more customer engagement as a potential marketing strategy, examples include loyalty programs and personalized marketing strategies.</li>
+              <li>For effective product development we recommend that SAB should further diversify and innovate their product by means of developing new flavours, new premium or craft lines, more promotion of pre-mixed beverages and the making limited editions or collaborations
+              </li>
+              <li>In terms of distribution, we recommend that SAB should develop more partnerships with online retailers, optimize their supply chain through efficient logistical processes,
+                 expand further into the intracontinental market ( Africa), and strengthen their existing alliances and partnerships with distributors to ensure optimal shelf placement.</li>
+                 <li>From our analysis we found that the highest performing product from SAB is beer, specifically pack size 750ml which comes in the bottle pack type, and this product made more
+                   sales than all other products combined. For SAB to capitalize on this market lead we recommend new aesthetic renovations to the packaging and labelling of the product as a way to visually persuade the customer into purchasing this product over the competitors offering. </li>
+                   <li>The data showed that SAB is underperforming in the box segment, and had no market share in the tetra and sachet segment.However, these segments only make a 1% of the total market share from our analysis, we recommend that SAB promote the products under the box pack
+                     type using the marketing strategies mentioned in the previous slide (content marketing, influencer collaborations,etc.). </li>
+                     <li>For SAB to penetrate the tetra and sachet segments, we suggest that they conduct thorough market research to evaluate the demographic and appeal which drive sales in this segment, and then introduce new products under this segment in a customer engaging manner.  
+                    </li>
+                    <li>For high-demand months (April, May,November), ensure higher inventory levels to meet the expected sales spikes. For low-demand months (February, June, July), reduce inventory to avoid overstocking and reduce holding costs</li>
+                    <li>Utilize real-time data and forecasting insights to adjust production plans dynamically.</li>
+                    <li>Monitor sales data and forecast accuracy regularly to identify any deviations from the predicted values.</li>
+                    <li>Use sales data and market insights to refine forecasting models and improve future predictions.
+                    </li>
+                    <li>Develop contingency plans for unexpected events, such as supply chain disruptions or sudden changes in consumer preferences.</li>
             </ul>
               
           </div>
@@ -96,10 +190,10 @@
 
     <div class="card">
       <h3>Conclusion</h3>
-      <p>SAB is the top-performing manufacturer, with Brand A leading in sales and beer being the most popular liquor category. 750ml bottles are the best-performing pack type,
+      <p>CompanyX is the top-performing manufacturer, with Brand A leading in sales and beer being the most popular liquor category. 750ml bottles are the best-performing pack type,
          while tetra and sachets are the least popular. Competitor C is the second most performing manufacturer with the most consistent performance, Competitors A and B have similar sales volumes, 
          but "Others" is the lowest-performing manufacturer. Based on historical data and the use of a forecasting model, 
-        SAB is expected to see increased sales in 2022.</p>
+        CompanyX is expected to see increased sales in 2022.</p>
   </div>
 
 
