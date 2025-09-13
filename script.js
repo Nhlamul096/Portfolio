@@ -1,9 +1,12 @@
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
+    if (navLinks.style.display === 'block') {
+        navLinks.style.display = 'none';
+    } else {
+        navLinks.style.display = 'block';
+    }
 }
-
 
 
 const roles = ["Developer", "Analyst", "Tester", "Trader"];

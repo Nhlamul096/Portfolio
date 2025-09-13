@@ -2,13 +2,16 @@
 
 
 /* Reset default margins and force black background */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000; /* makes sure background is always black */
-  overflow-x: hidden; /* prevents horizontal scrolling */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /* makes sure background is always black */
+    overflow-x: hidden;
+    /* prevents horizontal scrolling */
 }
 
 /* Section container */
@@ -41,7 +44,8 @@ html, body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.15; /* Make it subtle like SpaceX */
+    opacity: 0.15;
+    /* Make it subtle like SpaceX */
     pointer-events: none;
 }
 
@@ -96,6 +100,7 @@ html, body {
         transform: translateY(0);
     }
 }
+
 /*Above we styled Home page*/
 
 #about {
@@ -183,23 +188,26 @@ html, body {
 
 @keyframes zoomPulse {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      transform: scale(1.2);
+        transform: scale(1.2);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
-  .zoom-text {
+}
+
+.zoom-text {
     display: inline-block;
     animation: zoomPulse 5s infinite ease-in-out;
-    color: #00ffff; /* Optional: make it glow or neon */
+    color: #00ffff;
+    /* Optional: make it glow or neon */
     font-weight: bold;
-  }
-  
+}
+
 /*above we styled about*/
 
 #skills {
@@ -256,6 +264,7 @@ html, body {
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
     transform: scale(1.05);
 }
+
 /*Above we styled the skills*/
 
 #projects {
@@ -348,6 +357,7 @@ html, body {
     color: #0b0c10;
     transform: scale(1.05);
 }
+
 /*we styled projects above*/
 footer {
     background-color: #0b0c10;
@@ -402,6 +412,7 @@ footer::before {
     background-color: #00ffff;
     border-radius: 2px;
 }
+
 /*footer styling above*/
 
 /* Header Styling */
@@ -530,8 +541,11 @@ header .nav-links a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
+    /* space between cards */
     max-width: 1200px;
     margin: 0 auto;
+    padding: 2rem 1rem;
+    /* add padding around the grid */
 }
 
 /* Individual Card Styling */
@@ -539,10 +553,23 @@ header .nav-links a:hover {
     background-color: #1f1f1f;
     border-radius: 10px;
     padding: 2rem;
+    display: flex;
+    /* ✅ Make it a flex container */
+    flex-direction: column;
+    /* stack items vertically */
+    justify-content: space-between;
+    /* ✅ keeps content top + button bottom */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     color: #fff;
     height: 100%;
+
+    /* ensure equal height */
+    .card {
+        margin-bottom: 2rem;
+        /* extra spacing between rows if needed */
+    }
+
 }
 
 .card h3 {
@@ -557,6 +584,8 @@ header .nav-links a:hover {
     font-size: 1rem;
     color: #e0e0e0;
     margin-bottom: 1.5rem;
+    flex-grow: 1;
+    /* ✅ lets paragraph expand if needed */
 }
 
 .card:hover {
@@ -577,6 +606,10 @@ header .nav-links a:hover {
     border-radius: 5px;
     transition: all 0.3s ease;
     letter-spacing: 1px;
+    align-self: center;
+    /* center horizontally */
+    margin-top: auto;
+    /* ✅ pushes button to bottom */
 }
 
 .card .btn:hover {
@@ -587,6 +620,7 @@ header .nav-links a:hover {
 .card .btn:active {
     background-color: #008080;
 }
+
 /* Section Styling */
 #contact {
     background-color: #0b0c10;
@@ -697,19 +731,18 @@ header .nav-links a:hover {
     font-weight: 300;
     color: #ffffff;
     text-align: center;
-  }
-  
-  .highlight {
+}
+
+.highlight {
     color: #00ffff;
     font-weight: 600;
     transition: opacity 0.5s ease-in-out;
-  }
-  
-  .fade-out {
+}
+
+.fade-out {
     opacity: 0;
-  }
-  
-  .fade-in {
+}
+
+.fade-in {
     opacity: 1;
-  }
-  
+}
